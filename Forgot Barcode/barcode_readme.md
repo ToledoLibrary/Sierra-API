@@ -13,3 +13,5 @@ The user will receive one of three messages based on the status responses from t
 Triple Xs (xxx) appear before and after text (such as location and phone number) that should be customized. 
 
 Comments have been placed throughout to assist in updating the code with library-specific information such as Sierra API credentials and catalog URLs.
+
+Use at your own risk. Not supported by the Toledo Lucas County Public Library.
