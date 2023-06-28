@@ -113,7 +113,7 @@ function getToken() {
         <p>" . $notification . "</p>
         <p>If you did not make this request, please ignore this email.</p>";
 
-        $substring = substr($notification, 0, 37); // Extract the first 37 characters from $notification
+        $substring = substr($notification, 0, 37); // Extract the first 37 characters from $notification to test for card not found
 
         if ($substring !== "The above email address was not found") {
           $message .= "<p>If you forgot your PIN, click <a href='https://catalog.toledolibrary.org/pinreset~S1*eng'>here</a> to reset it.<p>";
