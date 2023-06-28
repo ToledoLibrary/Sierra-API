@@ -102,23 +102,36 @@ function getToken() {
       // REPLACE CONTACT INFO >  INSTANCES PRECEDED BY xxx
       // REPLACE or REMOVE LINK TO FORGOT YOUR PIN
     
-      $message = "
-      <html>
-      <head>
-      <title>Library Card Help Request</title>
-      </head>
-      <body>
-      <p>Someone requested the xxxLIBRARYxxx card barcode associated with " . $email.  ".<p>
-      <p>No changes have been made to your account.</p>
-      <p>" . $notification . "</p>
-      <p>If you did not make this request, please ignore this email.</p>
-      <p>If you forgot your PIN, click <a href='URL_FORGOT_PIN'>here</a> to reset it.<p>
-      <p><br></p>
-      <p>xxxLIBRARYxxx<br>
-      xxxPHONE NUMBERxxx<br>
-      </body>
-      </html>
-      ";
+        $message = "
+        <html>
+        <head>
+        <title>Library Card Help Request</title>
+        </head>
+        <body>
+        <p>Someone requested the Toledo Lucas County Public Library card barcode associated with " . $email.  ".<p>
+        <p>No changes have been made to your account.</p>
+        <p>" . $notification . "</p>
+        <p>If you did not make this request, please ignore this email.</p>";
+
+        $substring = substr($notification, 0, 37); // Extract the first 37 characters from $notification
+
+        if ($substring !== "The above email address was not found") {
+          $message .= "<p>If you forgot your PIN, click <a href='https://catalog.toledolibrary.org/pinreset~S1*eng'>here</a> to reset it.<p>";
+        }
+        
+        $message .= "
+        <p><br></p>
+        <p>Toledo Lucas County Public Library<br>
+        Winner of the National Medal for Museum and Library Services<br>
+        419.259.5200<br>
+        <a href='https://toledolibrary.us12.list-manage.com/track/click?u=dac9884c6ba4158b2a57952ed&id=d4c813c61f&e=ef77cdc9b8'>Web</a> | 
+        <a href='https://toledolibrary.us12.list-manage.com/track/click?u=dac9884c6ba4158b2a57952ed&id=49c77f6e5a&e=ef77cdc9b8'>Facebook</a> | 
+        <a href='https://toledolibrary.us12.list-manage.com/track/click?u=dac9884c6ba4158b2a57952ed&id=0fa474c945&e=ef77cdc9b8'>Twitter</a> | 
+        <a href='https://toledolibrary.us12.list-manage.com/track/click?u=dac9884c6ba4158b2a57952ed&id=f26d1a9989&e=ef77cdc9b8'>Instagram</a> | 
+        <a href='https://toledolibrary.us12.list-manage.com/track/click?u=dac9884c6ba4158b2a57952ed&id=0099221c88&e=ef77cdc9b8'>YouTube</a><br>
+        </body>
+        </html>
+        ";
       
       // Always set content-type when sending HTML email
       $headers = "MIME-Version: 1.0" . "\r\n";
