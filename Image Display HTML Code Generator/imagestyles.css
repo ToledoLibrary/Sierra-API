@@ -1,0 +1,107 @@
+/*  BOOKLIST CUSTOM CSS START */
+
+/* container */
+.special-display-1L-image-grid {
+    display:block;
+  }
+  
+  /* columns */
+  .special-display-1S-image-grid > * {
+    padding:1rem;
+  }
+  
+  /* tablet breakpoint */
+  @media (min-width:768px) {
+    .special-display-1S-image-grid {
+        display: grid;
+        grid-template-columns:  100px auto;
+        grid-column-gap: 20px;
+    }
+  }
+  
+  .special-display-1M-image-grid {
+    display:block;
+  }
+  
+  /* columns */
+  .special-display-1M-image-grid > * {
+    padding:1rem;
+  }
+  
+  /* tablet breakpoint */
+  @media (min-width:768px) {
+    .special-display-1M-image-grid {
+        display: grid;
+        grid-template-columns:  200px auto;
+        grid-column-gap: 20px;
+    }
+  }
+  
+  
+  .special-display-1L-image-grid {
+    display:block;
+  }
+  
+  /* columns */
+  .special-display-1L-image-grid > * {
+    padding:1rem;
+  }
+  
+  /* tablet breakpoint */
+  @media (min-width:768px) {
+    .special-display-1L-image-grid {
+        display: grid;
+        grid-template-columns:  300px auto;
+        grid-column-gap: 0px;
+    }
+  }
+  
+  
+  /* container */
+  .special-display-3-image-grid {
+    display:block;
+  }
+  
+  /* columns */
+  .special-display-3-image-grid > * {
+    padding:1rem;
+  }
+  
+  /* tablet breakpoint */
+  @media (min-width:768px) {
+    .special-display-3-image-grid {
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        grid-column-gap: 20%;
+  
+    }
+  }
+  
+  /* container */
+  .special-display-5-image-grid {
+    display:block;
+  }
+  
+  /* columns */
+  .special-display-5-image-grid > * {
+    padding:1rem;
+  }
+  
+  /* tablet breakpoint */
+  @media (min-width:768px) {
+    .special-display-5-image-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-column-gap: 4%;
+  
+    }
+  }
+  
+  /* CONSTRAIN IMAGE */
+  
+  .specialdisplayimage1 {
+    object-fit: cover;
+    width:100%;
+  }
+
+  /*  BOOKLIST CUSTOM CSS END */
