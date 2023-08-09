@@ -10,7 +10,7 @@ Replace all XXXX with library-specific information.
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Book Tools</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="XXXX" crossorigin="anonymous">
     <link rel="stylesheet" href="imagestyles.css">
 
 
@@ -171,7 +171,7 @@ function getBibNum($token,$isbn){
 
 			  $bibid = $entries[0]["bib"]["id"];
               echo "Bib Num: " . $bibid . "<br>";
-			  echo "<a target=_blank href='https://cXXXX/record=b" . $bibid . "~S1'>https://XXXX/record=b" . $bibid . "~S1</a><br>";
+			  echo "<a target=_blank href='https://XXXX/record=b" . $bibid . "~S1'>https://XXXX/record=b" . $bibid . "~S1</a><br>";
 			  echo "<a target=_blank href='https://XXXX/iii/encore/record/C__Rb" . $bibid . "?lang=eng'>https://XXXX/iii/encore/record/C__Rb" . $bibid . "?lang=eng</a></div></div>";
 
               curl_close($curl);
